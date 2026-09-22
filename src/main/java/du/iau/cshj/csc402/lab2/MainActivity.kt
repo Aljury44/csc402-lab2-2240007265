@@ -1,0 +1,18 @@
+package du.iau.cshj.csc402.lab2
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.material3.MaterialTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContent {
+            MaterialTheme {
+                TaskTrackerScreen()
+            }
+        }
+    }
+}
